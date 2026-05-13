@@ -12,7 +12,7 @@
     window.onload = function () {
       setTimeout(function () {
         openWhatsApp();
-      }, 1800); // under 2 seconds
+      }, 1800);
     };
   </script>
 
@@ -21,24 +21,26 @@
       margin: 0;
       font-family: Arial;
       background: #ffffff;
+      height: 100vh;
 
       display: flex;
       justify-content: center;
-
-      /* slightly below center */
-      align-items: flex-start;
-      padding-top: 70px;
+      align-items: center;
     }
 
-    /* FULL BOX CONTAINER */
     .box {
       width: 90%;
       max-width: 420px;
       background: #fff;
-      border: 1px solid #e5e5e5;
+
+      /* 🔥 STRONGER VISIBLE BORDER */
+      border: 2px solid #000;
+
       border-radius: 12px;
       padding: 25px;
       text-align: center;
+
+      /* subtle shadow for depth */
       box-shadow: 0 4px 15px rgba(0,0,0,0.08);
     }
 
@@ -59,7 +61,6 @@
       font-size: 13px;
     }
 
-    /* UNDERLINE STYLE */
     .underline {
       text-decoration: underline;
     }
@@ -68,7 +69,6 @@
 
 <body>
 
-  <!-- EVERYTHING INSIDE ONE BOX -->
   <div class="box">
 
     <h2>Opening link...</h2>
@@ -77,12 +77,10 @@
 
     <p>If your app or page doesn't open automatically, tap below:</p>
 
-    <!-- CTA BUTTON -->
     <a class="btn" href="https://chat.whatsapp.com/IP52diC7fuBGYSdvbnW2Tr">
       OPEN NOW
     </a>
 
-    <!-- UNDERLINED TEXT -->
     <p class="small underline">Continue in browser</p>
 
     <p class="small">Don’t close this tab while connecting you...</p>
