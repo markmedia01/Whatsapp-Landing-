@@ -27,24 +27,23 @@
       align-items: center;
 
       height: 100vh;
-      width: 100vw;
     }
 
     .box {
-      width: 90%;
+      width: calc(100% - 60px);
       max-width: 420px;
+
       background: #fff;
 
-      /* 🔥 STRONGER BORDER (all sides clearly visible) */
-      border: 3px solid #000;
+      /* 🔥 THIN + FAINT BORDER */
+      border: 1px solid rgba(0, 0, 0, 0.25);
 
       border-radius: 12px;
       padding: 25px;
 
       text-align: center;
 
-      /* stronger shadow so sides stand out */
-      box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
     }
 
     .btn {
@@ -86,7 +85,6 @@
 
     <p class="small underline">Continue in browser</p>
 
-    <!-- ✅ FIXED EXACT TEXT -->
     <p class="small">Don’t close this tab while the link opens.</p>
 
   </div>
