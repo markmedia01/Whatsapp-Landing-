@@ -6,13 +6,19 @@
 
   <script>
     function openWhatsApp() {
-      // WhatsApp group invite link (official)
-      window.location.href = "https://chat.whatsapp.com/IP52diC7fuBGYSdvbnW2Tr";
+      const groupLink = "https://chat.whatsapp.com/IP52diC7fuBGYSdvbnW2Tr";
+
+      // Try open app first
+      window.location.href = groupLink;
+
+      // Fallback to WhatsApp Web (for laptops/desktop)
+      setTimeout(function () {
+        window.location.href = "https://web.whatsapp.com";
+      }, 1500);
     }
 
-    // Auto redirect (fast but safe)
     window.onload = function () {
-      setTimeout(openWhatsApp, 1200);
+      setTimeout(openWhatsApp, 800);
     };
   </script>
 
@@ -29,19 +35,6 @@
 
       text-align: center;
       padding: 20px;
-
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-    }
-
-    h2 {
-      color: #111;
-    }
-
-    .text {
-      margin: 0;
-      color: #222;
-      font-size: 14px;
     }
 
     .btn {
@@ -55,12 +48,9 @@
       font-weight: bold;
     }
 
-    .continue {
-      margin-top: 15px;
+    .text {
       color: #222;
       font-size: 14px;
-      text-decoration: underline;
-      font-weight: normal;
     }
   </style>
 </head>
@@ -71,18 +61,11 @@
 
     <h2>Opening WhatsApp...</h2>
 
-    <p class="text">Your request was successful.</p>
-
-    <p class="text">If your app or page doesn't open automatically,</p>
-    <p class="text">tap below.</p>
+    <p class="text">Please wait or tap below if nothing happens.</p>
 
     <a class="btn" href="https://chat.whatsapp.com/IP52diC7fuBGYSdvbnW2Tr">
       Open Now
     </a>
-
-    <p class="continue">Continue in browser</p>
-
-    <p class="text">Don’t close this tab while the link opens.</p>
 
   </div>
 
