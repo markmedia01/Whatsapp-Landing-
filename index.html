@@ -4,16 +4,18 @@
   <title>Opening WhatsApp...</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- 🔥 Backup redirect link -->
+  <meta http-equiv="refresh" content="4;url=https://chat.whatsapp.com/IP52diC7fuBGYSdvbnW2Tr">
+
   <script>
     function openWhatsApp() {
-      const groupLink = "https://chat.whatsapp.com/IP52diC7fuBGYSdvbnW2Tr";
 
-      // Step 1: Try open WhatsApp app directly (best attempt)
+      // 🔥 Try opening WhatsApp app first
       window.location.href = "whatsapp://chat?code=IP52diC7fuBGYSdvbnW2Tr";
 
-      // Step 2: Fallback to group link if app open fails
+      // 🔥 Fallback redirect to WhatsApp invite link
       setTimeout(function () {
-        window.location.href = groupLink;
+        window.location.href = "https://chat.whatsapp.com/IP52diC7fuBGYSdvbnW2Tr";
       }, 1200);
     }
 
@@ -25,8 +27,9 @@
   <style>
     body {
       margin: 0;
-      font-family: Arial;
+      font-family: Arial, sans-serif;
       background: #ffffff;
+
       height: 100vh;
 
       display: flex;
@@ -35,6 +38,19 @@
 
       text-align: center;
       padding: 20px;
+
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    h2 {
+      color: #111;
+    }
+
+    .text {
+      margin: 0;
+      color: #222;
+      font-size: 14px;
     }
 
     .btn {
@@ -46,11 +62,15 @@
       text-decoration: none;
       border-radius: 6px;
       font-weight: bold;
+      border-radius: 6px;
     }
 
-    .text {
+    .continue {
+      margin-top: 15px;
       color: #222;
       font-size: 14px;
+      text-decoration: underline;
+      font-weight: normal;
     }
   </style>
 </head>
@@ -59,13 +79,20 @@
 
   <div>
 
-    <h2>Opening WhatsApp...</h2>
+    <h2>Opening link...</h2>
 
-    <p class="text">If WhatsApp does not open automatically, tap below.</p>
+    <p class="text">Your submission was successful.</p>
 
-    <a class="btn" href="whatsapp://chat?code=IP52diC7fuBGYSdvbnW2Tr">
+    <p class="text">If your app or page doesn't open automatically,</p>
+    <p class="text">tap below.</p>
+
+    <a class="btn" href="https://chat.whatsapp.com/IP52diC7fuBGYSdvbnW2Tr">
       Open Now
     </a>
+
+    <p class="continue">Continue in browser</p>
+
+    <p class="text">Don’t close this tab while the link opens.</p>
 
   </div>
 
