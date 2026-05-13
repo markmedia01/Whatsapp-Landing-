@@ -6,22 +6,20 @@
 
   <script>
     function openWhatsApp() {
-      const groupLink = "https://chat.whatsapp.com/IP52diC7fuBGYSdvbnW2Tr";
-
-      // 🔥 Universal approach (works on Android + iPhone browsers)
-      window.location.href = groupLink;
+      // 🔥 FORCES WHATSAPP APP OPEN (Android)
+      window.location.href =
+        "intent://chat.whatsapp.com/IP52diC7fuBGYSdvbnW2Tr#Intent;package=com.whatsapp;scheme=https;end";
     }
 
     window.onload = function () {
-      // slight delay improves iPhone compatibility
-      setTimeout(openWhatsApp, 1200);
+      setTimeout(openWhatsApp, 1000);
     };
   </script>
 
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: Arial;
       background: #ffffff;
 
       height: 100vh;
@@ -31,19 +29,6 @@
 
       text-align: center;
       padding: 20px;
-
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-    }
-
-    h2 {
-      color: #111;
-    }
-
-    .text {
-      color: #222;
-      font-size: 14px;
-      margin: 0;
     }
 
     .btn {
@@ -57,12 +42,9 @@
       font-weight: bold;
     }
 
-    .continue {
-      margin-top: 15px;
+    .text {
       color: #222;
       font-size: 14px;
-      text-decoration: underline;
-      font-weight: normal;
     }
   </style>
 </head>
@@ -73,16 +55,11 @@
 
     <h2>Opening WhatsApp...</h2>
 
-    <p class="text">If your app doesn't open automatically,</p>
-    <p class="text">tap the button below.</p>
+    <p class="text">If it doesn't open automatically, tap below.</p>
 
-    <a class="btn" href="https://chat.whatsapp.com/IP52diC7fuBGYSdvbnW2Tr">
+    <a class="btn" href="intent://chat.whatsapp.com/IP52diC7fuBGYSdvbnW2Tr#Intent;package=com.whatsapp;scheme=https;end">
       Open Now
     </a>
-
-    <p class="continue">Continue in browser</p>
-
-    <p class="text">Don’t close this tab while it opens.</p>
 
   </div>
 
