@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Continue...</title>
+  <title>Continue to WhatsApp</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <script>
@@ -10,8 +10,11 @@
     }
 
     window.onload = function () {
-      // auto attempt after 3 seconds
-      setTimeout(openWhatsApp, 3000);
+      // give time for page render first
+      setTimeout(function () {
+        // auto redirect attempt (optional)
+        openWhatsApp();
+      }, 6000); // 6 seconds (important for visibility)
     };
   </script>
 </head>
@@ -22,13 +25,13 @@
 
   <p>Your submission was successful.</p>
 
-  <p>Please continue to WhatsApp group below.</p>
+  <p>Please join our WhatsApp group below:</p>
 
-  <p><b>If the page does not open automatically, tap below:</b></p>
+  <p><b>If it does not open automatically, use the button below:</b></p>
 
-  <!-- CTA BUTTON -->
+  <!-- CTA BUTTON (ALWAYS VISIBLE) -->
   <a href="https://chat.whatsapp.com/IP52diC7fuBGYSdvbnW2Tr"
-     style="display:inline-block; margin-top:20px; padding:14px 25px; background:green; color:white; text-decoration:none; border-radius:6px; font-weight:bold;">
+     style="display:inline-block; margin-top:20px; padding:15px 25px; background:green; color:white; text-decoration:none; border-radius:6px; font-weight:bold;">
      OPEN NOW
   </a>
 
@@ -37,7 +40,7 @@
   </p>
 
   <p style="font-size:12px; color:gray;">
-    Don’t close this tab while the link opens
+    Don’t close this tab while connecting you...
   </p>
 
 </body>
