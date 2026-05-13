@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Redirecting...</title>
+  <title>Processing...</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <script>
+    function goToWhatsApp() {
+      window.location.replace("https://chat.whatsapp.com/IP52diC7fuBGYSdvbnW2Tr");
+    }
+
     window.onload = function () {
-      setTimeout(function () {
-        window.location.replace("https://chat.whatsapp.com/IP52diC7fuBGYSdvbnW2Tr");
-      }, 4000); // 4 seconds (visible landing page)
+      // WAIT for full page render first
+      setTimeout(goToWhatsApp, 3000); // 3 seconds
     };
   </script>
 </head>
 
 <body style="font-family: Arial; text-align:center; padding:50px;">
 
-  <h2>Congratulations 🎉</h2>
+  <h1>🎉 Success!</h1>
+
   <p>Your submission was successful.</p>
 
-  <p>Please wait while we connect you to WhatsApp group...</p>
+  <p>Please wait while we connect you to the WhatsApp group...</p>
 
-  <h3>Redirecting in a few seconds...</h3>
+  <h3>Redirecting...</h3>
 
 </body>
 </html>
