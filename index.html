@@ -19,7 +19,7 @@
   <style>
     body {
       margin: 0;
-      font-family: Arial;
+      font-family: Arial, sans-serif;
       background: #ffffff;
 
       height: 100vh;
@@ -30,6 +30,10 @@
 
       text-align: center;
       padding: 20px;
+
+      /* 🔥 makes text sharper */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
     }
 
     .btn {
@@ -43,17 +47,18 @@
       font-weight: bold;
     }
 
+    /* 🔥 clearer text (no faint look) */
     .text {
       margin: 0;
-      color: gray;
+      color: #444;   /* darker = more visible */
       font-size: 14px;
     }
 
-    /* 🔥 REDUCED FONT SIZE */
+    /* 🔥 slightly smaller + clearer */
     .continue {
       margin-top: 15px;
-      color: gray;
-      font-size: 15px;   /* smaller than before */
+      color: #444;
+      font-size: 14px;  /* slightly reduced */
       font-weight: normal;
       text-decoration: underline;
     }
