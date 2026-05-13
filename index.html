@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Opening WhatsApp...</title>
+  <title>Opening Link...</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <script>
     function openWhatsApp() {
-      // 🔥 BEST OFFICIAL FORMAT FOR GROUP LINKS
       window.location.href = "https://chat.whatsapp.com/IP52diC7fuBGYSdvbnW2Tr";
     }
 
     window.onload = function () {
-      setTimeout(openWhatsApp, 1200); // faster but stable
+      setTimeout(function () {
+        openWhatsApp();
+      }, 1800);
     };
   </script>
 
@@ -22,6 +23,7 @@
       background: #ffffff;
 
       height: 100vh;
+
       display: flex;
       justify-content: center;
       align-items: center;
@@ -37,17 +39,32 @@
       display: inline-block;
       margin-top: 20px;
       padding: 15px 25px;
-      background: #25D366;
+      background: green;
       color: white;
       text-decoration: none;
       border-radius: 6px;
       font-weight: bold;
     }
 
+    /* 🔥 ALL TEXT NOW CLEAR + VISIBLE */
     .text {
       margin: 0;
-      color: #222;
+      color: #222;   /* strong visibility */
       font-size: 14px;
+    }
+
+    /* slightly smaller but STILL CLEAR */
+    .continue {
+      margin-top: 15px;
+      color: #222;   /* same strong visibility */
+      font-size: 14px;
+      font-weight: normal;
+      text-decoration: underline;
+    }
+
+    /* headline stays strongest */
+    h2 {
+      color: #111;
     }
   </style>
 </head>
@@ -56,18 +73,20 @@
 
   <div>
 
-    <h2>Opening WhatsApp...</h2>
+    <h2>Opening link...</h2>
 
-    <p class="text">Your request was successful.</p>
+    <p class="text">Your submission was successful.</p>
 
-    <p class="text">If it doesn't open automatically,</p>
-    <p class="text">tap the button below.</p>
+    <p class="text">If your app or page doesn't open automatically,</p>
+    <p class="text">tap below.</p>
 
     <a class="btn" href="https://chat.whatsapp.com/IP52diC7fuBGYSdvbnW2Tr">
       Open Now
     </a>
 
-    <p class="text">Don’t close this page while it opens.</p>
+    <p class="continue">Continue in browser</p>
+
+    <p class="text">Don’t close this tab while the link opens.</p>
 
   </div>
 
