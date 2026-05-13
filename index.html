@@ -31,7 +31,6 @@
       text-align: center;
       padding: 20px;
 
-      /* 🔥 makes text sharper */
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
     }
@@ -47,20 +46,25 @@
       font-weight: bold;
     }
 
-    /* 🔥 clearer text (no faint look) */
+    /* 🔥 ALL TEXT NOW CLEAR + VISIBLE */
     .text {
       margin: 0;
-      color: #444;   /* darker = more visible */
+      color: #222;   /* strong visibility */
       font-size: 14px;
     }
 
-    /* 🔥 slightly smaller + clearer */
+    /* slightly smaller but STILL CLEAR */
     .continue {
       margin-top: 15px;
-      color: #444;
-      font-size: 14px;  /* slightly reduced */
+      color: #222;   /* same strong visibility */
+      font-size: 14px;
       font-weight: normal;
       text-decoration: underline;
+    }
+
+    /* headline stays strongest */
+    h2 {
+      color: #111;
     }
   </style>
 </head>
@@ -71,7 +75,7 @@
 
     <h2>Opening link...</h2>
 
-    <p>Your submission was successful.</p>
+    <p class="text">Your submission was successful.</p>
 
     <p class="text">If your app or page doesn't open automatically,</p>
     <p class="text">tap below.</p>
