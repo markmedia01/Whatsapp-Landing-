@@ -43,14 +43,20 @@
       font-weight: bold;
     }
 
-    .small {
+    /* 🔥 MAIN IMPORTANT TEXT (bigger + bolder) */
+    .continue {
       margin-top: 15px;
       color: gray;
-      font-size: 16px;
+      font-size: 18px;
+      font-weight: 600;
+      text-decoration: underline;
     }
 
-    .underline {
-      text-decoration: underline;
+    /* 🔥 SMALLER SECONDARY TEXT */
+    .warning {
+      margin-top: 10px;
+      color: gray;
+      font-size: 14px;
     }
   </style>
 </head>
@@ -69,9 +75,11 @@
       Open Now
     </a>
 
-    <p class="small underline">Continue in browser</p>
+    <!-- 🔥 BIGGER + BOLDER -->
+    <p class="continue">Continue in browser</p>
 
-    <p class="small">Don’t close this tab while the link opens.</p>
+    <!-- 🔥 SMALLER -->
+    <p class="warning">Don’t close this tab while the link opens.</p>
 
   </div>
 
