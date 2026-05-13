@@ -43,18 +43,20 @@
       font-weight: bold;
     }
 
+    /* normal text size (same for both lines) */
+    .text {
+      margin-top: 10px;
+      color: gray;
+      font-size: 14px;
+    }
+
+    /* continue in browser (NOT bold, but underlined) */
     .continue {
       margin-top: 15px;
       color: gray;
       font-size: 18px;
-      font-weight: 600;
+      font-weight: normal; /* 🔥 removed bold */
       text-decoration: underline;
-    }
-
-    .warning {
-      margin-top: 10px;
-      color: gray;
-      font-size: 14px;
     }
   </style>
 </head>
@@ -67,17 +69,18 @@
 
     <p>Your submission was successful.</p>
 
-    <!-- ✅ FIXED EXACT STRUCTURE -->
-    <p>If your app or page doesn't open automatically,</p>
-    <p>tap below.</p>
+    <!-- SAME FONT SIZE BOTH LINES -->
+    <p class="text">If your app or page doesn't open automatically,</p>
+    <p class="text">tap below.</p>
 
     <a class="btn" href="https://chat.whatsapp.com/IP52diC7fuBGYSdvbnW2Tr">
       Open Now
     </a>
 
+    <!-- NOT BOLD + UNDERLINED -->
     <p class="continue">Continue in browser</p>
 
-    <p class="warning">Don’t close this tab while the link opens.</p>
+    <p class="text">Don’t close this tab while the link opens.</p>
 
   </div>
 
