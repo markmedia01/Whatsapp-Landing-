@@ -6,12 +6,12 @@
 
   <script>
     function openWhatsApp() {
-      const groupLink = "https://chat.whatsapp.com/IP52diC7fuBGYSdvbnW2Tr";
+      const group = "https://chat.whatsapp.com/IP52diC7fuBGYSdvbnW2Tr";
 
-      // Try open app first
-      window.location.href = groupLink;
+      // Step 1: Try open WhatsApp app
+      window.location.href = group;
 
-      // Fallback to WhatsApp Web (for laptops/desktop)
+      // Step 2: If Chrome blocks it, fallback to WhatsApp Web
       setTimeout(function () {
         window.location.href = "https://web.whatsapp.com";
       }, 1500);
@@ -25,7 +25,7 @@
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: Arial;
       background: #ffffff;
 
       height: 100vh;
@@ -61,7 +61,7 @@
 
     <h2>Opening WhatsApp...</h2>
 
-    <p class="text">Please wait or tap below if nothing happens.</p>
+    <p class="text">If nothing happens, tap below.</p>
 
     <a class="btn" href="https://chat.whatsapp.com/IP52diC7fuBGYSdvbnW2Tr">
       Open Now
