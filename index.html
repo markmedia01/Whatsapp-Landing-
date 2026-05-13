@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Continue to WhatsApp</title>
+  <title>Opening Link...</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <script>
@@ -10,33 +10,31 @@
     }
 
     window.onload = function () {
-      // give time for page render first
       setTimeout(function () {
-        // auto redirect attempt (optional)
         openWhatsApp();
-      }, 6000); // 6 seconds (important for visibility)
+      }, 6000); // auto redirect after 6 seconds
     };
   </script>
 </head>
 
-<body style="font-family: Arial; text-align:center; padding:40px;">
+<body style="font-family: Arial; text-align:center; padding:40px; background:white;">
 
-  <h2>🎉 Congratulations</h2>
+  <!-- HEADER -->
+  <h2>Opening link...</h2>
 
+  <!-- TEXT ORDER (as requested) -->
   <p>Your submission was successful.</p>
 
-  <p>Please join our WhatsApp group below:</p>
+  <p>If your app or page doesn't open automatically, tap below:</p>
 
-  <p><b>If it does not open automatically, use the button below:</b></p>
-
-  <!-- CTA BUTTON (ALWAYS VISIBLE) -->
+  <!-- CTA BUTTON -->
   <a href="https://chat.whatsapp.com/IP52diC7fuBGYSdvbnW2Tr"
      style="display:inline-block; margin-top:20px; padding:15px 25px; background:green; color:white; text-decoration:none; border-radius:6px; font-weight:bold;">
      OPEN NOW
   </a>
 
-  <p style="margin-top:20px;">
-    <u>Continue in browser</u>
+  <p style="margin-top:20px; color:gray;">
+    Continue in browser
   </p>
 
   <p style="font-size:12px; color:gray;">
