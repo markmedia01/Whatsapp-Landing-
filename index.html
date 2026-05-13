@@ -43,19 +43,19 @@
       font-weight: bold;
     }
 
-    /* normal text size (same for both lines) */
+    /* normal instruction text */
     .text {
-      margin-top: 10px;
+      margin: 0;            /* 🔥 removes spacing between lines */
       color: gray;
       font-size: 14px;
     }
 
-    /* continue in browser (NOT bold, but underlined) */
+    /* continue in browser (NOT bold, underlined) */
     .continue {
       margin-top: 15px;
       color: gray;
       font-size: 18px;
-      font-weight: normal; /* 🔥 removed bold */
+      font-weight: normal;  /* 🔥 ensures no bold */
       text-decoration: underline;
     }
   </style>
@@ -69,7 +69,7 @@
 
     <p>Your submission was successful.</p>
 
-    <!-- SAME FONT SIZE BOTH LINES -->
+    <!-- 🔥 NO SPACE BETWEEN THESE TWO LINES -->
     <p class="text">If your app or page doesn't open automatically,</p>
     <p class="text">tap below.</p>
 
@@ -77,7 +77,7 @@
       Open Now
     </a>
 
-    <!-- NOT BOLD + UNDERLINED -->
+    <!-- 🔥 NOT BOLD + UNDERLINED -->
     <p class="continue">Continue in browser</p>
 
     <p class="text">Don’t close this tab while the link opens.</p>
